@@ -1,0 +1,6 @@
+.wrapper {
+    background-color: yellow;
+    width: clamp(200px, 35vw, 250px);
+    height: 300px;
+    border-radius: 5px;
+}

@@ -1,5 +1,10 @@
 .wrapper {
   max-width: 1440px;
+  margin: 40px auto 0 auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
   background-color: tomato;
-  margin: 0 auto;
 }
