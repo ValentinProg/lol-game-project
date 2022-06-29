@@ -1,0 +1,15 @@
+.wrapper {
+  background-color: #161B22;
+  height: 80px;
+  display: flex;
+  align-items:center;
+}
+
+.content {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 40px;
+}
