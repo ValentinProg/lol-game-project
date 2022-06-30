@@ -3,8 +3,9 @@
   margin: 40px auto 0 auto;
   padding: 30px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 70px;
   background-color: tomato;
+  
 }
