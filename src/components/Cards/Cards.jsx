@@ -15,7 +15,7 @@ const Cards = () => {
   // }
 
   // api_key=RGAPI-34fd58b9-503d-45aa-889f-12e79562406c
-  
+
   const getChampions = async () => {
     await axios
       .get("http://ddragon.leagueoflegends.com/cdn/12.12.1/data/en_US/champion.json")
