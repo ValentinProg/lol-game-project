@@ -5,7 +5,5 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 70px;
-  background-color: tomato;
-  
+  gap: 70px;  
 }
