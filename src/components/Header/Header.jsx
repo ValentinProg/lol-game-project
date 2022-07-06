@@ -6,6 +6,7 @@ import logo from '../assets/img/logo.svg'
 
 const Header = () => {
   return (
+  
     <header className={styles.wrapper}>
       <div className={styles.content}>
         {/* <button>Button</button> */}
@@ -13,6 +14,7 @@ const Header = () => {
         {/* <Logo width='20px' height='20px'/> */}
       </div>
     </header>
+    
   );
 };
 

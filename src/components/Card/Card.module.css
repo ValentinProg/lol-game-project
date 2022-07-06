@@ -3,7 +3,16 @@
     flex-direction: column-reverse;
     position: relative;
     height: 450px;
+
 } 
+
+.border {
+    max-width: 250px;
+    position: relative;
+    background: linear-gradient(to top, #C79B3C, #161B22);
+    padding: 2px; 
+}
+
 
 .content {
     text-align: center;
