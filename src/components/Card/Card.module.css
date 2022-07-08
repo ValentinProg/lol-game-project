@@ -1,23 +1,22 @@
 .wrapper {
+    width: 250px;
     display: flex;
     flex-direction: column-reverse;
     position: relative;
     height: 400px;
+    cursor: pointer
 } 
 
 .border {
-    max-width: 250px;
     position: relative;
     background: linear-gradient(to top, #C79B3C, #161B22);
     padding: 2px; 
-    
 }
 
 .border:hover {
     transform: scale(1.1);
     transition: transform 0.5s;
-    box-shadow: 0 0 30px #C79B3C;
-  
+    box-shadow: 0 0 30px #C79B3C; 
 }
 
 .content {
@@ -32,6 +31,10 @@
     border-radius: 0 0 5px 5px;
 } 
 
+.content h2 {
+    font-size: 22px;
+}
+
 
 .img {
     width: 100%;
@@ -45,3 +48,48 @@
     color: #C79B3C;
     font-weight: 600;
 }
+
+.contentBack {
+  display: block;
+    
+}
+
+.sprite {
+    border-radius: 50%;
+}
+
+.discription {
+    font-size: 12px;
+}
+
+.icons {
+    width: 25px;
+    height: 25px;
+}
+
+.cardFlip {
+	-webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+
+ @-webkit-keyframes flip-vertical-left {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(-180deg);
+              transform: rotateY(-180deg);
+    }
+  }
+  @keyframes flip-vertical-left {
+    0% {
+      -webkit-transform: rotateY(0);
+              transform: rotateY(0);
+    }
+    100% {
+      -webkit-transform: rotateY(-180deg);
+              transform: rotateY(-180deg);
+    }
+  }
+  
