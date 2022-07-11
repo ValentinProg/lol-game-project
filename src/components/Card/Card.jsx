@@ -8,12 +8,15 @@ import magic from '../assets/img/magic.svg'
 const Card = (props) => {
 
   const [isCardFlipped, setIsCardFlipped] = useState(false)
-
+  
   const changeCardState = () => {
+
     if (isCardFlipped) {
+      // event.currentTarget.classList.remove(styles.cardFlip)
       setIsCardFlipped(false)
 
     } else {
+      // event.currentTarget.classList.add(styles.cardFront)
       setIsCardFlipped(true)
     }
   }
@@ -25,29 +28,45 @@ const Card = (props) => {
 
 
   return (
-    <div className={styles.border}>
-      <div className={styles.wrapper} onClick={changeCardState}>
+    <div className={styles.border} onClick={changeCardState}>
+      <div className={styles.wrapper} >
 
       {
         isCardFlipped
         ? <div className={styles.contentBack}>
             <img className={styles.sprite} src={`http://ddragon.leagueoflegends.com/cdn/12.12.1/img/champion/${props.champion.id}.png`}/>
-            <div>
-              <span className={styles.tags}>
-                <img className={styles.icons} src={sword}/> Attack: {props.champion.info.attack}
-              </span><br/>
+            <div className={styles.characters}>
+              <div className={styles.character}>
+              <img className={styles.icons} src={sword}/>
+                <div className={styles.charStats}>
+                  <span>Attack:</span>
+                  <span>{props.champion.info.attack}</span>
+                </div>
+              </div>
 
-              <span className={styles.tags}>
-                <img className={styles.icons} src={shield}/>Defense: {props.champion.info.defense}
-              </span><br/>
+              <div className={styles.character}>
+                <img className={styles.icons} src={shield}/>
+                <div className={styles.charStats}>
+                  <span> Defense:</span>
+                  <span>{props.champion.info.defense}</span>
+                </div>
+              </div>
 
-              <span className={styles.tags}>
-                <img className={styles.icons} src={star}/>Difficulty: {props.champion.info.difficulty}
-              </span><br/>
+              <div className={styles.character}>
+                <img className={styles.icons} src={star}/>
+                <div className={styles.charStats}>
+                  <span>Difficulty:</span>
+                  <span>{props.champion.info.difficulty}</span>
+                </div>          
+              </div>
               
-              <span className={styles.tags}>
-                <img className={styles.icons} src={magic}/>Magic: {props.champion.info.magic}
-              </span><br/>
+              <div className={styles.character}>
+                <img className={styles.icons} src={magic}/>
+                <div className={styles.charStats}>
+                  <span>Magic:</span>
+                  <span>{props.champion.info.magic}</span>
+                </div>  
+              </div>
             </div>
             <p className={styles.discription}>{props.champion.blurb}</p>
           </div>  
