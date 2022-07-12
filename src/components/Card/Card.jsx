@@ -135,7 +135,7 @@ const Card = (props) => {
               <div className={styles.character}>
                 <img className={styles.icons} src={shield} />
                 <div className={styles.charStats}>
-                  <span> Defense:</span>
+                  <span> Defense: </span>
                   <span>{props.champion.info.defense}</span>
                 </div>
               </div>
