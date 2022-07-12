@@ -4,20 +4,24 @@
     flex-direction: column-reverse;
     position: relative;
     height: 400px;
-    cursor: pointer
+    cursor: pointer;
+
+   
 } 
 
 .border {
     position: relative;
     background: linear-gradient(to top, #C79B3C, #161B22);
     padding: 2px; 
+
+    
 }
 
-/* .border:hover {
+ /* .border:hover {
     transform: scale(1.1);
     transition: transform 0.5s;
     box-shadow: 0 0 30px #C79B3C; 
-} */
+}  */
 
 .content {
     text-align: center;
@@ -29,6 +33,9 @@
     background: linear-gradient(180deg, rgba(24, 22, 22, 0) 0%, rgb(10, 10, 10,  0.95) 60%);
     backdrop-filter: blur(1px); 
     border-radius: 0 0 5px 5px;
+
+    
+ 
 } 
 
 .content h2 {
@@ -56,6 +63,8 @@
     padding: 10px 10px;
     box-shadow: 0 0 30px #C79B3C; 
     color:blanchedalmond;
+   
+    
 }
 
 .sprite {
@@ -96,32 +105,4 @@
 
 
 
- /* .cardFlip {
-	-webkit-animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-	        animation: flip-vertical-left 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-}
-
-
-@-webkit-keyframes flip-vertical-left {
-    0% {
-        -webkit-transform: rotateY(0);
-                transform: rotateY(0);
-    }
-    100% {
-        -webkit-transform: rotateY(-180deg);
-                transform: rotateY(-180deg);
-    }
-}
-
-@keyframes flip-vertical-left {
-    0% {
-        -webkit-transform: rotateY(0);
-                transform: rotateY(0);
-    }
-    100% {
-        -webkit-transform: rotateY(-180deg);
-                transform: rotateY(-180deg);
-    }
-}
-    */
 
