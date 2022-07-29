@@ -6,21 +6,28 @@
   position: sticky;
   top: 0;
   z-index: 3;
-
+  padding: 10px 20px 10px 20px;
+  
 }
 
-/* .wrapper:hover {
-    transform: scale(1.1);
-    transition: transform 0.5s;
-    box-shadow: 0 0 30px #C79B3C;
-} */
+
 
 .content {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin: 0 auto;
 }
 
 .logo {
-  height: 40px;
+   height: 40px;
+
 }
+
+.icon {
+  height: 35px; 
+  filter: invert(65%) sepia(100%) saturate(280%) hue-rotate(3deg) brightness(94%) contrast(89%);
+  
+}
+
+
+
 

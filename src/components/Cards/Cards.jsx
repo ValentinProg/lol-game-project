@@ -3,7 +3,7 @@ import Card from "../Card/Card";
 import styles from "./Cards.module.css";
 import axios from "axios";
 
-const Cards = () => {
+const Cards = (props) => {
   const [champions, setChampions] = useState([]);
   console.log(champions);
 
@@ -28,7 +28,7 @@ const Cards = () => {
   }, []);
 
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.wrapper} onClick={props.closeSidebar}>
       {champions.map((champion) => {
         return <Card champion={champion} key={champion.key} />;
       })}

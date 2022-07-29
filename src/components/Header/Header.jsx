@@ -1,20 +1,20 @@
-import React from 'react';
-import styles from './Header.module.css'
-import logo from '../assets/img/logo.svg'
+import React from "react";
+import styles from "./Header.module.css";
+import logo from "../assets/img/logo.svg";
+import menu from "../assets/img/menu.svg";
+
 // import { ReactComponent as Logo } from '../assets/img/logo.svg'
 
-
-const Header = () => {
+const Header = (props) => {
   return (
-  
     <header className={styles.wrapper}>
+      <div className={styles.burger} onClick={props.openSidebar}>
+        <img className={styles.icon} src={menu} />
+      </div>
       <div className={styles.content}>
-        {/* <button>Button</button> */}
-        <img className={styles.logo} src={logo}/>
-        {/* <Logo width='20px' height='20px'/> */}
+        <img className={styles.logo} src={logo} />
       </div>
     </header>
-    
   );
 };
 
