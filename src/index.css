@@ -2,10 +2,16 @@
 
 body {
   margin: 0;
-  background-color: #0D1117; 
+  /* background-color: #0D1117;  */
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.sidebar li:hover {
+  background-color: #0D1117;
 }
 
 /* Указываем box sizing */

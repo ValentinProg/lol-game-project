@@ -7,9 +7,13 @@
   top: 0;
   z-index: 3;
   padding: 10px 20px 10px 40px;
-
-  
 }
+
+.wrapperLight {
+  /* background-color: bisque; */
+  background-color: #FFF8DC;
+}
+
 
 
 
@@ -26,7 +30,7 @@
 .icon {
   height: 35px; 
   filter: invert(65%) sepia(100%) saturate(280%) hue-rotate(3deg) brightness(94%) contrast(89%);
-  
+  cursor: pointer;
 }
 
 

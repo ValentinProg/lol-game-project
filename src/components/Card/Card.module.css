@@ -13,11 +13,11 @@
     padding: 2px;  
 }
 
- .border:hover {
+ /* .border:hover {
     /* transform: scale(1.1);
     transition: transform 0.5s; */
     /* box-shadow: 0 0 30px #C79B3C;  */
-} 
+/* }  */ 
 
 .content {
     text-align: center;

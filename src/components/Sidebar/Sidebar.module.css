@@ -1,6 +1,4 @@
 .sidebar {
-   
- 
     color: #C79B3C;
     width: 120px;
     height: 100%;
@@ -10,9 +8,6 @@
     position: fixed;
     /* height: 550px;
     margin-top: 175px; */
-   
-    
-   
 }
 
 .sidebar li {
@@ -23,18 +18,33 @@
     
 }
 
-.sidebar li:hover {
-    background-color: #0D1117;
-  
-}
+
 
 .sidebarOpen {
     transform: translateX(0%);  
 }
 
-.content {
+/* .content {
     min-height: 100%;
-    /* margin-top: 80px; */
+   
+} */
+
+
+.contentLight {
+    min-height: 100%;
+    background-color: #FFF8DC;
+  }
+
+
+.contentDark {
+    min-height: 100%;
     background-color: #161B22;
-  
+  }
+
+.contentLight li:hover {
+    background-color: #F0FFFF ;
+}
+
+.contentDark li:hover {
+    background-color: #0D1117;
 }
