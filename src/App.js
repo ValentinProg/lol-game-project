@@ -3,6 +3,7 @@ import Cards from './components/Cards/Cards';
 import Sidebar from './components/Sidebar/Sidebar';
 import { useState } from 'react';
 import Switch from './components/Switch/Switch';
+import BackToTopButton from './components/BackToTopButton/BackToTopButton';
 
 
 
@@ -32,6 +33,7 @@ function App() {
       <Header openSidebar={toggleSidebar} theme={theme} changeTheme={toggleTheme}/>
       <Sidebar sidebar={sidebar} theme={theme}/>
       <Cards closeSidebar={closeSidebar}/>    
+      <BackToTopButton/>
     </div>
     
   );
